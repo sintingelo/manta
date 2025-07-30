@@ -1,0 +1,40 @@
+# Dart/Pub related
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+generated_plugin_registrant.dart
+
+# Flutter related
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+.flutter-*
+.fvm/
+ios/Flutter/Generated.xcconfig
+
+# VS Code
+.vscode/
+
+# Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Mac
+.DS_Store
+
+# Android
+android/.gradle/
+android/.idea/
+android/local.properties
+
+# Web
+web/.dart_tool/
+
+# Others
+pubspec.lock
+*.log
+*.tmp
