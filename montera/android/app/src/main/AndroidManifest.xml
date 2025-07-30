@@ -2,7 +2,6 @@
     package="com.example.montera">
 
     <application
-        android:name=".MainApplication"
         android:label="Montera"
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true"
@@ -10,9 +9,9 @@
         
         <activity
             android:name=".MainActivity"
-            android:launchMode="singleTop"
+            android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
