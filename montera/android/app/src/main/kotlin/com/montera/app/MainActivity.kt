@@ -1,4 +1,4 @@
-package com.montera.app
+package com.example.montera
 
 import io.flutter.embedding.android.FlutterActivity
 
