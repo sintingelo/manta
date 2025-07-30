@@ -1,32 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'theme/theme_provider.dart';
-import 'screens/home_screen.dart'; // ganti jika pakai halaman lain
-
-void main() {
-  runApp(
-    ChangeNotifierProvider(
-      create: (_) => ThemeProvider(),
-      child: const MyApp(),
-    ),
-  );
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final themeProvider = Provider.of<ThemeProvider>(context);
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Montera',
-      theme: themeProvider.currentTheme,
-      home: const HomeScreen(), // ganti jika layar pertama kamu berbeda
-    );
-  }
-}import 'package:flutter/material.dart';
-import 'auth/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,10 +10,28 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       title: 'Montera',
-      theme: ThemeData.dark(),
-      home: const LoginScreen(),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text("Montera")),
+      body: const Center(
+        child: Text(
+          "Hello Montera! 🚀",
+          style: TextStyle(fontSize: 24),
+        ),
+      ),
     );
   }
 }
