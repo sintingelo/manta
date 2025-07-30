@@ -1,0 +1,2 @@
+rootProject.name = 'montera'
+include ':app'
