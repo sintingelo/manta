@@ -1,0 +1,14 @@
+workflows:
+  montera_build:
+    name: Build Montera APK
+    max_build_duration: 15
+    environment:
+      flutter: stable
+      xcode: latest
+      vars:
+        FLUTTER_BUILD_MODE: release
+    scripts:
+      - flutter pub get
+      - flutter build apk --release
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
