@@ -1,0 +1,89 @@
+# ====================
+# Flutter & Dart
+# ====================
+.dart_tool/
+.packages
+.pub-cache/
+build/
+flutter_export_environment.sh
+
+# ====================
+# Android
+# ====================
+android/.gradle/
+android/captures/
+*.iml
+*.apk
+*.ap_
+
+# ====================
+# iOS
+# ====================
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/App.framework
+ios/Flutter/engine/
+*.xcworkspace
+*.xcuserstate
+
+# ====================
+# VS Code / IntelliJ / IDE
+# ====================
+.vscode/
+.idea/
+*.iml
+
+# ====================
+# Replit (Opsional)
+# ====================
+.replit
+hidden.txt
+
+# ====================
+# Codemagic & CI/CD
+# ====================
+.codemagic.yaml (✅ upload jika ingin build otomatis)
+
+# ====================
+# Environment / Secrets
+# ====================
+.env
+.env.*
+*.key
+*.jks
+*.pem
+*.p12
+google-services.json
+firebase_options.dart
+
+# ====================
+# Backup & Wallet
+# ====================
+wallet.json
+backup_wallet/
+token.json
+user_data/
+*.sqlite
+
+# ====================
+# Miscellaneous
+# ====================
+*.log
+*.tmp
+*.swp
+*.DS_Store
+*.lock
+*.zip
+*.aab
+*.ipa
+
+# ====================
+# Personal Testing
+# ====================
+screenshots/
+temp_debug/
+test/mock_*.dart
