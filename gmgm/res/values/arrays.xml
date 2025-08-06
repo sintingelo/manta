@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kline_digit_gap_labels">
+        <item>K</item>
+        <item>Mn</item>
+        <item>Bn</item>
+        <item>T</item>
+    </string-array>
+    <string-array name="kline_digit_gap_labels_en">
+        <item>K</item>
+        <item>M</item>
+        <item>B</item>
+        <item>T</item>
+    </string-array>
+</resources>
